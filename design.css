@@ -1,0 +1,16 @@
+.btn-success{
+    background-color: pink;
+    border: 3px solid black;
+    
+}
+
+.btn-success :hover{
+    background-color: pink;
+    border: 3px solid black;
+}
+
+.bi-arrow-through-heart{
+    color:hotpink;
+    font-size: 2em;
+}
+
