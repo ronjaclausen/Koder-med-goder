@@ -1,16 +1,39 @@
-.btn-success{
-    background-color: pink;
-    border: 3px solid black;
-    
+body{
+    font-family: "Montserrat", sans-serif;
+    background-image: url("/images/himmel.jpg");
+    background-repeat: no-repeat;
+     background-size: 100% auto;
+     min-height: 100vh;
+    background-color: #0E1432;
+    color: white;
+
 }
 
-.btn-success :hover{
-    background-color: pink;
-    border: 3px solid black;
+.head{
+    display: flex;
+    justify-content: center;
+    background-color: #0E1432, #333;
 }
 
-.bi-arrow-through-heart{
-    color:hotpink;
-    font-size: 2em;
+
+.ticker-container {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
 }
 
+.ticker {
+    white-space: nowrap; /* For at holde teksten på én linje */
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: ticker-scroll 20s linear infinite; /* Justér animationstiden efter behov */
+}
+
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(100%); /* Start fra højre side af containeren */
+    }
+    100% {
+        transform: translateX(-100%); /* Slut på venstre side af containeren */
+    }
+}
